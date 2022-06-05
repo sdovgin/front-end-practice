@@ -2,7 +2,6 @@ h1,h2,h3 {
     text-align: center;
 }
 
-
 .first, .second {
     background-color: #F4978E;
 }
@@ -22,3 +21,19 @@ h1,h2,h3 {
     font-weight: 200 !important;
 }
 
+.breadcrumb > li {
+    display: inline;
+  }
+  
+  .breadcrumb li+li::before {
+      padding: 10px;
+    content: ">";
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+  }
+  
+  .breadcrumb a:hover {
+    color: red;
+  }
